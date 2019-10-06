@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="awardsCell" rowHeight="250" id="KGk-i7-Jjw" customClass="AwardsTableViewCell" customModule="MemberAwards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="508" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnv-zJ-ehs" userLabel="Background View">
+                        <rect key="frame" x="13" y="13" width="482" height="137"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vouchers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxX-aC-bpO">
+                                <rect key="frame" x="354" y="8" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NYI-2F-lAz"/>
+                                    <constraint firstAttribute="width" constant="120" id="nTu-yh-ODl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500000 poin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtQ-hs-pp3">
+                                <rect key="frame" x="8" y="103.5" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AxX-aC-bpO" firstAttribute="top" secondItem="dnv-zJ-ehs" secondAttribute="top" constant="8" id="5Nw-xR-GKF"/>
+                            <constraint firstAttribute="bottom" secondItem="QtQ-hs-pp3" secondAttribute="bottom" constant="12.5" id="B8g-i7-5LJ"/>
+                            <constraint firstAttribute="trailing" secondItem="AxX-aC-bpO" secondAttribute="trailing" constant="8" id="Nwr-sQ-Jje"/>
+                            <constraint firstItem="QtQ-hs-pp3" firstAttribute="leading" secondItem="dnv-zJ-ehs" secondAttribute="leading" constant="8" id="nrj-pU-ybf"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gift Card Image IDR 1.000.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljV-Am-lLf">
+                        <rect key="frame" x="13" y="157.5" width="482" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ljV-Am-lLf" secondAttribute="trailing" constant="13" id="BnX-LC-JZS"/>
+                    <constraint firstAttribute="trailing" secondItem="dnv-zJ-ehs" secondAttribute="trailing" constant="13" id="E64-fW-9Jh"/>
+                    <constraint firstItem="dnv-zJ-ehs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="EqI-o9-0kd"/>
+                    <constraint firstItem="dnv-zJ-ehs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="HHX-LA-pHq"/>
+                    <constraint firstAttribute="bottom" secondItem="dnv-zJ-ehs" secondAttribute="bottom" constant="50" id="Hi0-Pb-deD"/>
+                    <constraint firstItem="ljV-Am-lLf" firstAttribute="top" secondItem="dnv-zJ-ehs" secondAttribute="bottom" constant="7.5" id="RZL-gr-FVh"/>
+                    <constraint firstAttribute="bottom" secondItem="ljV-Am-lLf" secondAttribute="bottom" constant="21.5" id="o9o-6t-8fQ"/>
+                    <constraint firstItem="ljV-Am-lLf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="qBC-Db-Jbh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="awardsNameLabel" destination="ljV-Am-lLf" id="koB-qx-djL"/>
+                <outlet property="awardsPointLabel" destination="QtQ-hs-pp3" id="hUl-eb-D7x"/>
+                <outlet property="awardsTypeLabel" destination="AxX-aC-bpO" id="vY9-bZ-5Yz"/>
+                <outlet property="parentView" destination="dnv-zJ-ehs" id="wee-3h-Fug"/>
+            </connections>
+            <point key="canvasLocation" x="178.2608695652174" y="189.50892857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

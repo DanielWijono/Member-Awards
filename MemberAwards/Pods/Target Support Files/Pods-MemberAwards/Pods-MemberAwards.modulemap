@@ -1,0 +1,6 @@
+framework module Pods_MemberAwards {
+  umbrella header "Pods-MemberAwards-umbrella.h"
+
+  export *
+  module * { export * }
+}
